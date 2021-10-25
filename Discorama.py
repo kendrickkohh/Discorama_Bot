@@ -2,8 +2,8 @@ import telebot
 import lyricsgenius
 
 #TOKENS
-TOKEN = "1942025448:AAHGxLtxa1DP_G_y5Wo93vaYtECmIU64MFM"
-GENIUStoken = "WywbmDXksHJO6XeM_tQO26J3IlJpS5fL5sivuCUScCpyeh7tnEVw5wzh6B9w0_6-"
+TOKEN = ""
+GENIUStoken = ""
 genius_object = lyricsgenius.Genius(GENIUStoken)
 
 knownUsers = []
@@ -62,12 +62,6 @@ def command_help(m):
         help_text += commands[key] + "\n"
     bot.send_message(CID, help_text)
 #----- End of Help command ------
-
-    
-#----- TEST -----
-
-#----- TEST -----
-
 
 #----- Start of Lyrics command -----
 @bot.message_handler(commands = ['lyrics'])
